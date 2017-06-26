@@ -10,7 +10,7 @@ title: Slayug
 description:  Currently Erasmus Student in Cluj-napoca
             First year of master degree in computer science, aim PHD
             else, i like make usefull javascript, java program, or simply funny things. PokemonGo.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "http://slayug.fr" # the subpath of your site, e.g. /blog
 url: "http://slayug.fr" # the base hostname & protocol for your site
 twitter_username: Zibungass
 github_username:  Slayug
