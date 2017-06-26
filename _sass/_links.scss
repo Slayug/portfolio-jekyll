@@ -4,6 +4,9 @@
 a {
     color: $brand-color;
 }
+.site-footer a{
+    display: inline-block;
+}
 .active{
     text-decoration: underline !important;
 }
