@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "NextSong"
+date:   2016-02-16 11:00:00 +0200
+categories: projects
+lang: en
+ref: nextSong
+---
+#### Android Application
+[Available on PlayStore](https://play.google.com/store/apps/details?id=com.toast.nextsong)
+
+It allow you to change the current music without unlock your smartphone.  
+Only with the physical button. For instance set the next song, you have to click,
+on the bot button then on the top button (volume buttons).  
+Compatible with Play Music & Spotify for sure.  
+
+![next](https://lh3.googleusercontent.com/CJRpsVePriqAMEEMPvoAErK8urd6nT8XRlMKdcX7tIdjECLbj70QCrUmkZfM6h8-Zi0=h900-rw)
+![previous](https://lh3.googleusercontent.com/ifjwolkLRtJ1xsMr6hiDE_CVFfYp-tCQpKXPcQroSkFfNsvWy53dQnAcpWAxMOgOeg=h900-rw)

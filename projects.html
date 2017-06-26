@@ -8,7 +8,8 @@ lang: en
         <!-- <span class="card-title">Posts - <a href="projects/">Projects</a></span> -->
 
         <ul class="post-list">
-          {% for project in site.projects %}
+            {% assign sorted_projects = site.projects | sort:"date" | reverse %}
+          {% for project in sorted_projects %}
             <li>
               <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
               <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>

@@ -23,6 +23,9 @@ translations:
         posts:
             name: "Articles"
             url: "accueil.html"
+        about:
+            name: À Propos de moi
+            url: "about-fr.html"
     en:
         projects:
             name: "Projects"
@@ -30,6 +33,9 @@ translations:
         posts:
             name: "Posts"
             url: ""
+        about:
+            name: About me
+            url: "about.html"
 
 # Build settings
 markdown: kramdown

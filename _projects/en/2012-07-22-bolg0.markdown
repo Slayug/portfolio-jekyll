@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Bolg0"
+date:   2012-07-22 11:00:00 +0200
+categories: projects
+lang: en
+ref: bolg0
+---
+My first little game, to learn how works hitboxs and discover threads in same time.  
+Made with Java (awt). You are a little ball and you have to catch the sqaure to earn points.  
+But be careful with the other balls !  
+Then you have a second level when the window grow up ! Don't miss the Pringles !  
+At the end, i let you found how to reach the boss.
+Just use arrow to play.  
+[Download Bolg0.jar](/jar/Bolg0.jar)
