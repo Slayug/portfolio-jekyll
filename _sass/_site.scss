@@ -26,8 +26,7 @@ Site Style
         border: 12px #fff solid;
         height: 200px;
         width: 200px;
-        background: url('../assets/home.svg') center center no-repeat #fff;
-        background-size: 50px 50px;
+        background-color: white;
         display: inline-block;
         margin-bottom: -140px;
         overflow: hidden;
@@ -79,6 +78,8 @@ Site Style
         transition: $anim-speed;
         @extend .z-depth-2;
 
+        background: url('../assets/home.svg') center center no-repeat #fff;
+        background-size: 50px 50px;
         img{
             opacity: 0.7;
             transition: $anim-speed;
