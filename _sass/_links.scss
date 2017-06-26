@@ -2,5 +2,8 @@
   Links
 ------------------------------------------------------------*/
 a {
-    color: #2a92ea;
+    color: $brand-color;
+}
+.active{
+    text-decoration: underline !important;
 }

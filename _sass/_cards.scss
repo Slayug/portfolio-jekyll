@@ -1,7 +1,4 @@
-
-
 .card-panel {
-  transition: box-shadow .25s;
   padding: $card-padding;
   margin: $element-top-margin 0 $element-bottom-margin 0;
   border-radius: 2px;
@@ -9,12 +6,10 @@
   background-color: $card-bg-color;
 }
 
-.card { 
+.card {
   margin: $element-top-margin 0 $element-bottom-margin 0;
-  background-color: $card-bg-color;
-  transition: box-shadow .25s;
   border-radius: 2px;
-  @extend .z-depth-1;
+  // @extend .z-depth-1;
 
 
   .card-title {
@@ -137,7 +132,7 @@
   }
 
   .card-content {
-    padding: $card-padding;
+      
     border-radius: 0 0 2px 2px;
 
     p {
