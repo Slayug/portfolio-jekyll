@@ -1,23 +1,20 @@
 ---
 layout: default
-ref: index
-lang: en
+ref: projects
+lang: fr
 ---
 <div class="posts card">
-
     <div class="card-content white-text">
         <!-- <span class="card-title">Posts - <a href="projects/">Projects</a></span> -->
 
         <ul class="post-list">
-            {% assign posts=site.posts | where:"lang", page.lang %}
-            {% for post in posts %}
+          {% for project in site.projects %}
             <li>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
+              <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
             </li>
-            {% endfor %}
+          {% endfor %}
         </ul>
-
         <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
     </div>
 </div>

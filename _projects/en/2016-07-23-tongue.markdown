@@ -3,6 +3,8 @@ layout: post
 title:  "Tongue"
 date:   2016-07-19 11:49:45 +0200
 categories: projects
+lang: en
+ref: tongue
 ---
 Manage yours translations dynamically on your website. No reload page !  
 

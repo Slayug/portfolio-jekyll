@@ -2,14 +2,33 @@
 <div class="header-menu">
     <div class="header-menu-left">
         <div class="header-item">
-            <a href="{{ site.baseurl }}/">Posts</a>
+            <a href="{{ site.baseurl }}/{{ site.translations[page.lang]['posts'].url }}">{{ site.translations[page.lang]['posts'].name }}</a>
         </div>
         <div class="header-item">
-            <a href="{{ site.baseurl }}/projects.html">Projects</a>
+            <a href="{{ site.baseurl }}/{{ site.translations[page.lang]['projects'].url }}">{{ site.translations[page.lang]['projects'].name }}</a>
         </div>
     </div>
 
     <div class="header-menu-right">
         <a href="{{ site.baseurl }}/about/">About me</a>
+
+        <div class="wrapper">
+            {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+            {% for post in posts %}
+                <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}"><img src="/assets/flags/{{ post.lang }}.png"></img></a>
+            {% endfor %}
+
+
+            {% assign projects=site.projects | where:"ref", page.ref | sort: 'lang' %}
+            {% for project in projects %}
+                <a href="{{ project.url | prepend: site.baseurl }}" class="{{ project.lang }}"><img src="/assets/flags/{{ project.lang }}.png"></img></a>
+            {% endfor %}
+
+            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+            {% for page in pages %}
+                <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}"><img src="/assets/flags/{{ page.lang }}.png"></img></a>
+            {% endfor %}
+        </div>
     </div>
+
 </div>

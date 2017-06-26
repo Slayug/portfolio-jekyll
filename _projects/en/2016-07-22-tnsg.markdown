@@ -3,6 +3,8 @@ layout: post
 title:  "tnsg"
 date:   2016-07-22 11:00:00 +0200
 categories: projects
+lang: en
+ref: tnsg
 ---
 ** A NativeScript CLI Generator**  
 

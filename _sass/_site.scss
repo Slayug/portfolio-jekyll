@@ -210,7 +210,10 @@ td, tr{
     display: flex;
     justify-content: space-between;
 }
-.header-menu-right{
+.header-menu-right img{
+    width: 23px;
+    float: right;
+    margin-left: 4px;
 }
 .header-menu a{
     color: $card-link-color;
