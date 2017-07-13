@@ -8,7 +8,7 @@ lang: fr
         <!-- <span class="card-title">Posts - <a href="projects/">Projects</a></span> -->
 
         <ul class="post-list">
-            {% assign sorted_projects = site.projects | sort:"date" | reverse %}
+            {% assign sorted_projects = site.projects | sort:"date" | reverse | where:"lang", page.lang %}
             {% for project in sorted_projects %}
             <li>
                 <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>

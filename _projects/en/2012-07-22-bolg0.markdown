@@ -7,7 +7,7 @@ lang: en
 ref: bolg0
 ---
 My first little game, to learn how works hitboxs and discover threads in same time.  
-Made with Java (awt). You are a little ball and you have to catch the sqaure to earn points.  
+Made with Java (awt). You are a little ball and you have to catch the square to earn points.  
 But be careful with the other balls !  
 Then you have a second level when the window grow up ! Don't miss the Pringles !  
 At the end, i let you found how to reach the boss.

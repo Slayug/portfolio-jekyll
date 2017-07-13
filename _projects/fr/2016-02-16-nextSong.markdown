@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "NextSong"
+date:   2016-02-16 11:00:00 +0200
+categories: projects
+lang: fr
+ref: nextSong
+---
+#### Android Application
+[Disponible sur le PlayStore](https://play.google.com/store/apps/details?id=com.toast.nextsong)
+
+Permet de changer la musique sans toucher à l'écran du téléphone.  
+Seulement avec les touches physiques, par exemple pour la chanson suivante, vous devez cliquer sur le bouton du bas, puis celui du haut (bouton de volume).
+Et inversement pour la précédente.  
+Compatible avec Play Music & Spotify.
+
+![next](https://lh3.googleusercontent.com/CJRpsVePriqAMEEMPvoAErK8urd6nT8XRlMKdcX7tIdjECLbj70QCrUmkZfM6h8-Zi0=h900-rw)
+![previous](https://lh3.googleusercontent.com/ifjwolkLRtJ1xsMr6hiDE_CVFfYp-tCQpKXPcQroSkFfNsvWy53dQnAcpWAxMOgOeg=h900-rw)

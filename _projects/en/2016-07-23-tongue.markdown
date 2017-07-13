@@ -37,7 +37,7 @@ For the current language, by default if you specify nothing, it will take this o
 {% highlight html %}Tongue( defaultLanguage?:string, currentLanguage?:string );{% endhighlight %}  
 An other thing, if the default language of the browser is 'en-US' and you don't have this file available, Tongue will check if you have 'en' file, after have noticed the 'en-US.json' is not reachable.  
 
-Then in your json balise, set the link with yours translations with dataset:  
+Then in your html balise, set the link with yours translations with dataset:  
 {% highlight javascript %} <p data-tongue="word.toast"></p> {% endhighlight %}  
 
 ** **If you change something dynamically on your page, with some text, you should update the translation** **  

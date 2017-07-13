@@ -3,14 +3,14 @@ layout: post
 title:  "tnsg"
 date:   2016-07-22 11:00:00 +0200
 categories: projects
-lang: en
+lang: fr
 ref: tnsg
 ---
 **A NativeScript CLI Generator**  
 
 ----------
 
-Generate quickly your pages, services, class..    
+Générer rapidement vos pages, services, class..     
 npm repo: [https://npmjs.com/package/tnsg][npm-repo]    
 github repo: [https://github.com/Slayug/tnsg/][github-repo]    
 
@@ -27,8 +27,8 @@ Scaffold  | Usage
 `Service` | `tnsg -s my-service`  
 `Class` | `tnsg -c my-class`  
 
-### Examples:  
-`tnsg -p pages/login` will generate:
+### Exemples:  
+`tnsg -p pages/login` va générer:  
 
 * ./app/pages/login/login.android.css
 + ./app/pages/login/login.ios.css
@@ -36,17 +36,17 @@ Scaffold  | Usage
 * ./app/pages/login/login.component.ts
 * ./app/pages/login/login.html
 
-and link the component in *app.module.ts*
+et lier la page dans *app.module.ts*
 
-`tnsg -p pages/user-detail` will generate:  
+`tnsg -p pages/user-detail` va générer:  
 
- - ./app/pages/user-detail/user-detail.android.css  
- - ./app/pages/user-detail/user-detail.ios.css  
- - ./app/pages/user-detail/user-detail-common.css  
- - ./app/pages/user-detail/user-detail.component.ts  
- - ./app/pages/user-detail/user-detail.html  
+- ./app/pages/user-detail/user-detail.android.css  
+- ./app/pages/user-detail/user-detail.ios.css  
+- ./app/pages/user-detail/user-detail-common.css  
+- ./app/pages/user-detail/user-detail.component.ts  
+- ./app/pages/user-detail/user-detail.html  
 
- and link the component in *app.module.ts*  
+et lier la page dans *app.module.ts*  
 
 ## Generating View {N}  
 

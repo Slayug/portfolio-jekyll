@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "Tongue"
+date:   2016-07-19 11:49:45 +0200
+categories: projects
+lang: fr
+ref: tongue
+---
+
+Gérer vos traductions dynamiquement sur votre site. Sans avoir besoin de recharger la page !  
+
+## [⇒ Demo](http://buuuuug.ddns.net/tongue/)  
+
+Vous pouvez utiliser la version TypeScript ou la version prototype de js.  
+
+### How-To  
+Placez vos traductions dans le dossier 'translations', en fichier json (en.json).  
+
+{% highlight json %}  
+{  
+    "language":"en",  
+    "translation":{  
+        "word.toast": "toast",  
+        "word.translation": "Translation:",  
+        "paragraph.eurovelo": "I wanna be the very best\nLike no one ever was\nTo catch them is my real test\nTo train them is my cause\nI will travel across the land\nSearching far and wide\nEach Pokemon to understand\nThe power that's inside"  
+    }  
+}
+ {% endhighlight %}  
+
+Dans votre fichier javascript, instanciez la classe:  
+{% highlight html %}tongue = new Tongue();{% endhighlight %}    
+
+Vous pouvez facilement changer la langue avec:  
+{% highlight html %}tongue.switchLanguage('en');{% endhighlight %}  
+
+Vous pouvez définir une langue par défaut si vous le souhaitez.  
+Si vous ne définissez pas de langue par défaut, Tongue va tenter de prendre celle du navigateur.  
+{% highlight html %}Tongue( defaultLanguage?:string, currentLanguage?:string );{% endhighlight %}  
+Autre chose, si la langue par défaut du navigateur est 'en-US' et vous n'avez pas de fichier 'en-US.json' de disponible, Tongue va tenter de récupérer le fichier 'en.json'.  
+
+Ensuite dans vos balise html, indiquez le lien avec vos traductions avec dataset.  
+{% highlight javascript %} <p data-tongue="word.toast"></p> {% endhighlight %}  
+
+**Si vous changez du texte dynamiquement sur votre page, vous devez mettre à jour les traductions.**
+{% highlight js %}tongue.update();{% endhighlight %}  
+
+### Debug mode  
+Le mode debug vous montre si il y a des traductions manquantes.  
+Par défaut le mode debug est activé, vous pouvez changer ceci de deux manières:  
+
+1. {% highlight js %}tongue.setDebug( false );{% endhighlight %}
+2. Ou directement dans la classe, dans le constructeur.  
+
+### Prevent click  
+Prevent click est utile si vous gérer aussi vos traductions côté serveur et que le client
+a désactivé javascript. Vous pouvez ajouter le tag sur vos balises qui permettent de changer de langue par exemple:  
+{% highlight html %} <a href="/en" data-tongue-flag>href disable</a> {% endhighlight %}
+
+### TODO  
+Récupérer la langue depuis l'url.
